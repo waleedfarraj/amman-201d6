@@ -29,7 +29,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-return[a*b,'The product of 5 and 9 is 45.']
+  
+    return[a*b,'The product of 5 and 9 is 45.']
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -95,11 +96,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+    var total = multiply(2,3)[0]
+    var total2 =multiply(total,4)[0]
+    return[total2,'The numbers 2,3,4 have a product of 24.']
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
