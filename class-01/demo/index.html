@@ -11,12 +11,13 @@
         background-color: cadetblue;
       }
 
-      .firstList{
-        color: crimson;
-      }
+     
 
       ol{
         border: 3px solid black;
+      }
+      h1 {
+        color :blueviolet
       }
     </style>
   </head>
@@ -41,6 +42,13 @@
         <li>Double Chocolate</li>
         <li>Sugar dipped</li>
       </ol>
+      <p style="color: coral; background-color:	rgb(0, 204, 153) ;"> What is your name?</p>
+      <p style="color: cornflowerblue; background-color: darkgoldenrod;">what is your favourite flavour?</p>
+      <p style="color: darkolivegreen; background-color: darksalmon;">how many would you like ?</p>
+      <p style="color: darkviolet; background-color: deeppink;">Do you want coffee with that ?</p>
+      <p style="color: floralwhite; background-color: fuchsia; ">Do you have a comment about the service?</p> 
+      <p style="color: gold; background-color: black;">Do you need anything else ?</p>
+
 
     </main>
 
@@ -49,9 +57,22 @@
     </footer>
     <script>
       var userName = prompt('What is your name?');
-      var favoriteFlavor = prompt('What is your favorite flavor?', 'Eclair');
-      console.log('The user entered the name ',userName);
+      var favoriteFlavor = prompt('What is your favourite flavor?', 'Eclair');
       alert('Hello '+ userName + ' You favorite flavor is '+ favoriteFlavor);
+      console.log('The user entered the name ',userName);
+      var quantity = prompt("how many would you like?");
+      console.log('The user wants this many dounts ',quantity);
+      alert('Hello '+ userName + ' You favorite flavor is '+ favoriteFlavor + "you would like " +quantity + " dounts" );
+      var coffee = prompt("Do you want a coffee with that ?");
+      alert('Hello '+ userName + ' You favorite flavor is '+ favoriteFlavor + " you would like " +quantity +' and a ' + coffee +" for the coffee");
+      console.log('asking the user of he wants coffee',coffee);
+      var service = prompt("Do you have a comment about the service ?");
+      console.log("asking the custmor abot the srvice",service);
+      alert('Hello '+ userName + ' You favorite flavor is '+ favoriteFlavor + " you would like " +quantity +' dounts and a ' + coffee +" for the coffee" + " you had to say this about the service"+ service );
+      var anything = prompt("Do you need anything else ?");
+      console.log("asking the custmor if he needs anyhting else",anything );
+      alert('Hello '+ userName + ' You favorite flavor is '+ favoriteFlavor + " you would like " +quantity +' dounts and a ' + coffee +" for the coffee" + " you had to say this about the service"+ service +" and finally do you need anyhing else ?"+ anything +" okay i hope i wasn't too repatitve !");
+
     </script>
   </body>
 </html>
